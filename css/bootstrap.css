@@ -3310,9 +3310,9 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #660000;
+  background-color: #00A3DD;
   background: rgba(102, 0, 0, 0.6);
-  border: 2px solid #262b2d;
+  border: 2px solid #00A3DD;
   padding: 10px;
   border-radius: 15px;
    transition:       font 0.1s  ease;
