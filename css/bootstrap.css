@@ -4952,6 +4952,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .btn-group > .dropdown > a {
   font-size: 16px;
   padding-right: 65px;
+      background-color: #00A3DD;
 }
 .navbar-inverse .btn-group > .dropdown {
     display: inline-block;
