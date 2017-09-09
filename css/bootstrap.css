@@ -4943,7 +4943,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .btn-group {
   list-style-type: none;
-  background-color: 
+    background-color: #00A3DD;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
@@ -4952,7 +4952,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .btn-group > .dropdown > a {
   font-size: 16px;
   padding-right: 65px;
-  background-color: #00A3DD;
 }
 .navbar-inverse .btn-group > .dropdown {
     display: inline-block;
