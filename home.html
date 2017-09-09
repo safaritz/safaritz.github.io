@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>WSU Phenolics Gateway</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
+   integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw==" crossorigin=""/>
+    
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
+   integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA==" crossorigin=""></script>
+  <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   
+  </head>
+
+<body>
+        <nav class="navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img src="img/WSU-VE.svg" height="100px" style="padding-right: 100px;"/>
+            </div>
+            <div>
+          <img src="img/fractal.svg" height="100px" style="float: right; margin-right: -15px; overflow: visible;"/>
+          <ul style="float: right; list-style: none; font-family: sans-serif;">
+            <br>
+            <li><h3 style="color: #660000;">Phenolics Gateway</h3></li>
+            </ul>
+          </div>
+          </nav>
+            <nav class="navbar-inverse">
+            <div class="btn-group" style="padding-left: 80px;">
+              <li class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">Home<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="home.html">Phenolics Gateway home</a></li>
+                  <li><a href="http://wine.wsu.edu">WSU wine home</a></li>
+                  <li><a href="http://www.asev.org">ASEV home</a></li>
+                </ul>
+                </li>
+              </div>
+              <div class="btn-group">
+                  <li class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">Learn Phenolics<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="learn.html">Learn phenolics home</a></li>
+                  <li><a href="learn.html#nature">Phenolics in nature</a></li>
+                  <li><a href="learn.html#vineyard">Phenolics in the vineyard</a></li>
+                  <li><a href="learn.html#winemaking"Phenolics and winemaking</a></li>
+                  <li><a href="learn.html#storage">Storage and aging</a></li>
+                  <li><a href="learn.html#sensory">Sensory aspects</a></li>
+                  <li><a href="learn.html#health">Phenolics and health</a></li>
+                </ul>
+                </li>
+                </div>
+                <div class="btn-group">
+                  <li class="dropdown">
+                   <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">Protocols<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="protocols.html">Protocols home</a></li>
+                  <li><a href="protocols.html#assays">Assay protocols</a></li>
+                  <li><a href="protocols.html#sensory1">Sensory protocols</a></li>
+                  <li><a href="protocols.html#predict">Machine learning</a></li>
+                  <li><a href="protocols.html#sep">Separation protocols</a></li>
+                </ul>
+                </li>
+                </div>
+                <div class="btn-group">
+                  <li class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">Publications<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="publications.html">Publications home</a></li>
+                  <li><a href="publications.html#assayPubs">Phenolic assays</a></li>
+                  <li><a href="publications.html#sensoryPubs">Sensory analysis</a></li>
+                  <li><a href="publications.html#deficitPubs">Deficit irrigation</a></li>
+                  <li><a href="publications.html#predictPubs">Machine learning</a></li>
+                </ul>
+                </li>
+                </div>
+                <div class="btn-group">
+                  <li class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">People<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="people.html">People home</a></li>
+                  <li><a href="people.html#faculty">Faculty and staff</a></li>
+                  <li><a href="people.html#donate">Generous Benefactors</a></li>
+                </ul>
+                </li>
+                </div>
+                <div class="btn-group">
+                  <li class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="border: none">Search<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                                    <form action="http://google.com/search" class="searchform" method="get" name="searchform" target="_blank" style="color:black;">
+                    <input name="sitesearch" type="hidden">
+                    <input autocomplete="on" class="form-controls search" name="q" placeholder="Google search" required="required"  type="search" placeholder="Search">
+</form>
+<br>
+                  <form action="http://search.wsu.edu" class="searchform" method="get" name="searchform" target="_blank" style="color:black;">
+                    <input name="sitesearch" type="hidden">
+                    <input autocomplete="on" class="form-controls search" name="q" placeholder="WSU search" required="required"  type="search" placeholder="Search">
+</form>
+                </ul>
+                </li>
+                </div>
+            </nav>
+      
+      <div class="parallax" style="background-image: url('wineCenterPan.jpg');"></div>
+
+<div style="background-color: #660000; text-align: center; border-bottom: 5px solid #262b2d">
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#events" style="padding-right: 40px; padding-left: 40px;"><h4>Upcoming Events</h4></button>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#students" style="padding-right: 40px; padding-left: 40px;"><h4>For Students</h4></button>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#jobs" style="padding-right: 40px; padding-left: 40px;"><h4>Find a Job</h4></button>
+</div>
+
+<div id="events" class="panel-collapse collapse">
+    <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#asev" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">ASEV annual conference</h4></button></li>
+              <div id="asev" class="panel-collapse collapse">
+                <ul>
+                <li style="padding-top: 10px;"><img src="img/ASEV.jpg" width="75px" style="padding-right: 10px;"/>Brief description.</li>
+                </ul>
+                </div>
+                </ul>
+                    <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#wawgg" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">WAWGG annual trade show</h4></button></li>
+              <div id="wawgg" class="panel-collapse collapse">
+                <ul>
+                <li style="padding-top: 10px;"><img src="img/WAWGG.jpg" width="75px" style="padding-right: 10px;"/>Brief description.</li>
+                </ul>
+            </div>
+  </ul>
+</div>
+
+<div id="students" class="panel-collapse collapse">
+    <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#intern" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">Internships</h4></button></li>
+        <div id="intern" class="collapse">
+    <ul>
+        <li><a data-toggle="panel-collapse collapse" href="#intern1">Internship 1</a></li>
+              <div id="intern1" class="panel-collapse collapse">
+                <p>Brief description.</p>
+                </div>
+        <li><a data-toggle="panel-collapse collpase" href="#intern2">Internship 2</a></li>
+              <div id="intern2" class="panel-collapse collapse">
+                <p>Brief description.</p>
+                </div>
+                </ul>
+                </div>
+                </ul>
+                <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#schedule" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">Current students</h4></button></li>
+                <div id="schedule" class="collapse">
+    <ul>
+        <li><a data-toggle="collapse" href="#class1">Class name</a></li>
+              <div id="class1" class="panel-collapse collapse">
+                <ul>
+                  <li><a href="http://wine.wsu.edu/education/undergrad/">Syllabus</a></li>
+                  <li><a href="#">Class Schedule</a></li>
+                  </ul>
+              </div>
+              </ul>
+            </div>
+            </ul>
+            <ul style = "padding-left: 100px; padding-top: 25px;">
+              <li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#future"><h4 style=" padding-left: 15px; padding-right: 15px;">Prospective Students</h4></button></li>
+              <div id="future" class="panel-collapse collapse">
+                <ul>
+                  <li><a data-toggle="collapse" href="#">Prospective students link</a></li>
+                  </ul>
+                  </div>
+                  </ul>
+            </div>
+            
+  <div id="jobs" class="panel-collapse collapse">
+    <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#local" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">Local</h4></button></li>
+              <div id="local" class="panel-collapse collapse">
+                <ul>
+                <li>Brief description.</li>
+                </ul>
+                </div>
+                </ul>
+                    <ul style = "padding-left: 100px; padding-top: 25px;">
+        <li><button data-toggle="collapse" href="#anywhere" style="background-color: #262b2d; color: #fff;"><h4 style=" padding-left: 15px; padding-right: 15px;">Anywhere</h4></button></li>
+              <div id="anywhere" class="panel-collapse collapse">
+                <ul>
+                <li></li>Brief description.</li>
+                </ul>
+            </div>
+  </ul>
+</div>
+              
+
+      </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        </div>
+        <br><br><br>
+               <footer class="footer">&copy; Washington State University</footer>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+$(document).ready(function() { 
+    $('#bootstrapModalFullCalendar').fullCalendar({
+        events: '/hackyjson/cal/',
+        header: {
+            left: '',
+            center: 'prev title next',
+            right: ''
+        },
+        eventClick:  function(event, jsEvent, view) {
+            $('#modalTitle').html(event.title);
+            $('#modalBody').html(event.description);
+            $('#eventUrl').attr('href',event.url);
+            $('#fullCalModal').modal();
+        }
+    });
+});
+</script>
+</body>
+</html>
