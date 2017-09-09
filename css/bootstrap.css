@@ -3732,7 +3732,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: #262b2d;
+  background-color: ##00A3DD;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -4849,8 +4849,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #1EB53A	; 
-  border-bottom: 5px solid #262b2d;
+  background-color: #00A3DD; 
+  border-bottom: 5px solid #1EB53A;
+  border-top: 5px solid #FCD116;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
