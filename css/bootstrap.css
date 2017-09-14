@@ -3310,9 +3310,9 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #00A3DD;
+  background-color: #660000;
   background: rgba(102, 0, 0, 0.6);
-  border: 2px solid #00A3DD;
+  border: 2px solid #262b2d;
   padding: 10px;
   border-radius: 15px;
    transition:       font 0.1s  ease;
@@ -3732,7 +3732,7 @@ tbody.collapse.in {
   font-size: 14px;
   text-align: left;
   list-style: none;
-  background-color: ##00A3DD;
+  background-color: #262b2d;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #ccc;
@@ -4849,9 +4849,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #00A3DD; 
-  border-bottom: 5px solid #1EB53A;
-  border-top: 5px solid #00A3DD;
+  background-color: #660000; 
+  border-top: 5px solid #FCD116
+  border-bottom: 5px solid #FCD116;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4943,7 +4943,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .btn-group {
   list-style-type: none;
-    background-color: #00A3DD;
 }
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
@@ -4952,11 +4951,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .btn-group > .dropdown > a {
   font-size: 16px;
   padding-right: 65px;
-      background-color: #00A3DD;
 }
 .navbar-inverse .btn-group > .dropdown {
     display: inline-block;
-    background-color: #00A3DD;
 }
 .navbar-inverse .btn-group > .dropdown:hover > .dropdown-menu {
   margin-top: 0;
